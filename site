@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viral Mini-Game Creator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+      color: #fff;
+      overflow-x: hidden;
+      cursor: url('https://abs.twimg.com/emoji/v2/72x72/1f525.png'), auto;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    #floating-text {
+      position: fixed;
+      font-size: 1.5rem;
+      color: #ffffff;
+      z-index: 9999;
+      font-weight: bold;
+      pointer-events: none;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      background: transparent;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 3rem;
+      animation: popIn 1s ease-out;
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .btn {
+      margin-top: 20px;
+      background: #ff00cc;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: transform 0.2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+      background: #ff44dd;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .tiktok-embed {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #ff00cc;
+      text-decoration: none;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <div id="floating-text">🎮 Life is a game</div>
+  <div id="particles-js"></div>
+  <header>
+    <h1>I create viral mini-games</h1>
+    <a href="#games"><button class="btn">See My Games</button></a>
+  </header>
+
+  <section id="games">
+    <h2 data-aos="fade-up">Some of my Creations</h2>
+    <div class="games">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viralgameshub/video/7479198213795286294" data-video-id="7479198213795286294" style="max-width: 100%; min-width: 325px;" data-aos="zoom-in"><section></section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viralgameshub/video/7500714555803290902" data-video-id="7500714555803290902" style="max-width: 100%; min-width: 325px;" data-aos="zoom-in"><section></section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viralgameshub/video/7506240755422350614" data-video-id="7506240755422350614" style="max-width: 100%; min-width: 325px;" data-aos="zoom-in"><section></section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viralgameshub/video/7483028917993966871" data-video-id="7483028917993966871" style="max-width: 100%; min-width: 325px;" data-aos="zoom-in"><section></section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viralgameshub/video/7521221923234155798" data-video-id="7521221923234155798" style="max-width: 100%; min-width: 325px;" data-aos="zoom-in"><section></section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viralgameshub/video/7483770938991987990" data-video-id="7483770938991987990" style="max-width: 100%; min-width: 325px;" data-aos="zoom-in"><section></section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viralgameshub/video/7479230672867986710" data-video-id="7479230672867986710" style="max-width: 100%; min-width: 325px;" data-aos="zoom-in"><section></section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viralgameshub/video/7520150452919405846" data-video-id="7520150452919405846" style="max-width: 100%; min-width: 325px;" data-aos="zoom-in"><section></section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viralgameshub/video/7519749091601960214" data-video-id="7519749091601960214" style="max-width: 100%; min-width: 325px;" data-aos="zoom-in"><section></section></blockquote>
+    </div>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+  </section>
+
+  <section>
+    <h2 data-aos="fade-right">How I Create My Games</h2>
+    <p data-aos="fade-left">I mix absurd ideas, a touch of AI, and loads of fun. Then I test everything directly on TikTok to see what catches real attention. If it doesn’t make people laugh or shout, I scrap it.</p>
+  </section>
+
+  <section>
+    <h2 data-aos="fade-up">Wanna work with me? </h2>
+    <p data-aos="fade-up">Contact me on TikTok: <a href="https://www.tiktok.com/@viralgameshub" target="_blank">@viralgameshub</a> or at viralgameshubtiktok@gmail.com</p>
+  </section>
+
+  <footer>
+    © 2025 Viral Games Hub – Creator of viral TikTok mini-games
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 150 },
+        color: { value: ['#ff3cac', '#784ba0', '#2b86c5', '#20e3b2', '#f9ca24'] },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#ffffff',
+          opacity: 0.4,
+          width: 1
+        },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        detect_on: 'window',
+        events: {
+          onhover: { enable: true, mode: 'repulse' },
+          onclick: { enable: true, mode: 'push' }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+  <script>
+    const floatingText = document.getElementById('floating-text');
+    let dx = 2;
+    let dy = 2;
+    let x = 100;
+    let y = 100;
+
+    function moveText() {
+      const screenW = window.innerWidth;
+      const screenH = window.innerHeight;
+      const rect = floatingText.getBoundingClientRect();
+
+      if (x + rect.width >= screenW || x <= 0) {
+        dx = -dx;
+        randomizeColor();
+      }
+      if (y + rect.height >= screenH || y <= 0) {
+        dy = -dy;
+        randomizeColor();
+      }
+      x += dx;
+      y += dy;
+
+      floatingText.style.left = `${x}px`;
+      floatingText.style.top = `${y}px`;
+
+      requestAnimationFrame(moveText);
+    }
+
+    function randomizeColor() {
+      const colors = ['#ff3cac', '#784ba0', '#2b86c5', '#20e3b2', '#f9ca24'];
+      floatingText.style.color = colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    moveText();
+  </script>
+</body>
+</html>
